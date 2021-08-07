@@ -1,0 +1,53 @@
+.wrap {
+  text-align: left;
+  margin: 2rem;
+}
+.text{
+    text-align: center;
+    margin-top: 5rem;
+    color: grey;
+}
+.fbag {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.form_label {
+    font-size: 25px;
+    color: #000;
+    margin-bottom: 2rem;
+}
+form-select {
+    color:#41464b;
+}
+.App-logo {
+  height: 10vmin;
+  pointer-events: none;
+  margin-top: 2rem;
+}
+.App-logo2 {
+    height: 25vmin;
+    pointer-events: none;
+    margin-top: 2rem;
+  }
+.comment {
+  color: grey;
+}
+.gcards {
+    padding-bottom: 3rem;
+    box-shadow: grey;
+}
+.allCard {
+  display: flex;
+  flex-direction: column;
+  color: brown;
+  margin-top: 3rem;
+  border-bottom: solid grey 0.3px;
+}
+
+.wrapper {
+  margin: 10px;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+}
