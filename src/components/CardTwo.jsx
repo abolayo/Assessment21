@@ -1,11 +1,11 @@
 import illustration_1 from "../images/illustration_1.svg";
 import illustration_2 from "../images/illustration_2.svg";
-import scooter from "../images/scooter1.svg";
+import scooter from "../images/illustration_3.svg";
 import "../styles/App.css";
 import React from "react";
 import { Row, Col, Card } from "react-bootstrap";
 
-function Card_two(props) {
+function CardTwo(props) {
   const sampleData = [
     {
       id: 1,
@@ -27,13 +27,13 @@ function Card_two(props) {
     },
   ];
   return (
-    <div className="allCard" key={sampleData.id}>
-      <p> How we serve you</p>
+    <div key={sampleData.id}>
+      <h4 className='serve'> How we serve you</h4>
 
       <Row xs={1} md={4} className="gcards">
         {sampleData.map((data) => (
           <Col xs={12} md={4} xl={4}>
-            <Card className="shadow-sm mb-2 bg-white rounded">
+            <Card className="card_2 mb-2">
               <img
                 variant="top"
                 src={data.logo}
@@ -41,7 +41,7 @@ function Card_two(props) {
                 alt="logo"
               />
               <Card.Body>
-                <Card.Title>{data.type}</Card.Title>
+                <Card.Title className= 'card_type'>{data.type}</Card.Title>
                 <Card.Text>
                   <p className="comment">{data.comment}</p>
                 </Card.Text>
@@ -53,4 +53,4 @@ function Card_two(props) {
     </div>
   );
 }
-export default Card_two;
+export default CardTwo;

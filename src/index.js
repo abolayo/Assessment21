@@ -2,14 +2,25 @@ import React from "react";
 import * as ReactDOM from "react-dom";
 import "./styles/index.css";
 import App from "./App";
+import { Switch, Route } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Cart from "./Pages/Cart";
+import Header from "./components/NavBarPage";
 
 ReactDOM.render(
   <Router>
-    <App />
+    <Switch>
+      <Route exact path="/">
+        <App />
+      </Route>
+      <Route path="/Cart">
+      <Header />
+        <Cart />
+      </Route>
+    </Switch>
   </Router>,
   document.getElementById("root")
 );

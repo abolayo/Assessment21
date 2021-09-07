@@ -1,0 +1,157 @@
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-size: 14px;
+}
+
+body {
+  font-family: Courier;
+  line-height: 1.5;
+  color: #382628;
+}
+
+img {
+  max-width: 100%;
+}
+
+input[type="checkbox"] + label {
+  margin-left: .5rem;
+}
+
+label {
+  cursor: pointer;
+}
+
+button {
+  background: wheat;
+  color: #382628;
+  font: inherit;
+  appearance: none;
+  border-radius: 0;
+  border: 1px solid;
+  cursor: pointer;
+  
+ /* :hover,
+  :focus {
+    background: #382628;;
+  }*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 1.602rem;
+}
+
+h2 {
+  font-size: 1.424rem;
+}
+
+h3 {
+  font-size: 1.266rem;
+}
+
+.expand {
+  width: 100%;
+}
+
+.application {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1rem;
+  padding:  1rem;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 7rem 5rem ;
+  justify-content: space-between;
+}
+  .product-image {
+    padding: 0 1rem;
+    width: 50%;
+    margin-bottom: 1rem;
+    max-width: 160px;
+  }
+  
+  .product-title {
+    width: 50%;
+    padding: 0 1rem;
+    
+   /* span {
+      display: block;
+      max-width: 160px;
+    }*/
+  }
+  
+  .product-qty {
+    padding: 0 1rem;
+  }
+
+  .product-price {
+    padding: 0 1rem;
+    text-align: right;
+  }
+
+
+.qty {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  width:  4rem;
+}
+  .qty-button {
+    background: transparent;
+    color: #382628;;
+    width: 1rem;
+    height:  1rem;
+    padding: 0;
+    border-top: 0;
+    border-bottom: 0;
+  }
+  
+  .qty-num {
+    flex-grow: 1;
+  }
+  
+  .plus {
+    margin-right: auto;
+  }
+  
+  .minus {
+    margin-left: auto;
+  }
+
+
+.header {
+  margin-bottom: 1rem;
+  padding-bottom: .5rem;
+  position: relative;
+  
+ /* &:before {
+    content: "";
+    height: 1px;
+    position: absolute;
+    left: 0;
+    background: currentColor;
+    width: $phi * 2rem;
+    bottom: 0;
+  }*/
+}
+
+.footer {
+  border-top: 1px solid;
+  padding-top:  1em;
+  text-align: right;
+  margin: 1rem 0;
+}
+

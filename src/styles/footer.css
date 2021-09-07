@@ -30,7 +30,7 @@ a.twitter {
 a.instagram {
   color: black;
 }
-.fotter {
+.footer {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
   grid-gap: 2px;

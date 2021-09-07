@@ -35,12 +35,11 @@ function Cards(props) {
   ];
   return (
     <div className="allCard" key={sampleData.id}>
-      <h4> Pick an interest</h4>
-
+      <h4 className="pick"> Pick an interest</h4>
       <Row xs={1} md={3} className="gcards">
         {sampleData.map((data) => (
-          <Col xs={12} md={6} xl={3} >
-            <Card className='shadow-sm mb-2 bg-white rounded'>
+          <Col xs={12} md={6} xl={3}>
+            <Card className="shadow-sm mb-2 bg-white rounded">
               <img
                 variant="top"
                 src={data.logo}
