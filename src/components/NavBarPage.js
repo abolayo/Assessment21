@@ -1,15 +1,11 @@
 import React from "react";
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
 
-const Header = () => {
+function Header(props) {
   return (
-    <Navbar
-      collapseOnSelect
-      expand="sm"
-      variant="light"
-    >
-      <Container >
-        <Navbar.Brand  href="/">
+    <Navbar collapseOnSelect expand="sm" variant="light">
+      <Container>
+        <Navbar.Brand href="/">
           <span className="food">Food</span>
           <span className="bag">Bag</span>
         </Navbar.Brand>
@@ -19,14 +15,28 @@ const Header = () => {
           className="justify-content-end"
         >
           <Nav>
-            <Nav.Link href="/Cart" className="Cart">Cart</Nav.Link>
-            <Nav.Link href="/" className="Login">Login</Nav.Link>
-            <Button className="signUp" variant="outline-danger">Sign Up</Button>
+            <Nav.Link href="/Cart" className="Cart">
+              Cart
+            </Nav.Link>
+            <Nav.Link>
+              {" "}
+              {props.countCartItems ? (
+                <button className="badge">{props.countCartItems}</button>
+              ) : (
+                ""
+              )}
+            </Nav.Link>{" "}
+            <Nav.Link href="/" className="Login">
+              Login
+            </Nav.Link>
+            <Button className="signUp" variant="outline-danger">
+              Sign Up
+            </Button>
           </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
   );
-};
+}
 
 export default Header;

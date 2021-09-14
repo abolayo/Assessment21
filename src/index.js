@@ -8,7 +8,6 @@ import { BrowserRouter as Router } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Cart from "./Pages/Cart";
-import Header from "./components/NavBarPage";
 
 ReactDOM.render(
   <Router>
@@ -17,7 +16,6 @@ ReactDOM.render(
         <App />
       </Route>
       <Route path="/Cart">
-      <Header />
         <Cart />
       </Route>
     </Switch>

@@ -1,13 +1,76 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  margin: 0 4rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+h1,
+h2,
+h3 {
+  margin: 0.5rem 0;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+.row.center {
+  align-items: center;
+}
+.col-1 {
+  flex: 1;
+}
+.col-2 {
+  flex: 2;
+}
+.text-right {
+  text-align: right;
+}
+img.small {
+  max-height: 9rem;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: auto;
+}
+button {
+  font-size: 1rem;
+  padding: 0.1rem 0.3rem;
+  margin: 0.1rem;
+  border-radius: 0.5rem;
+  border: 0.1rem #f04040 solid;
+  color: #f04040;
+  width: 100%;
+  cursor: pointer;
+}
+.remove,
+.add {
+  width: 1.5rem;
+}
+button.badge,
+.cart {
+  background-color: #f04040;
+  border: none;
+  color: #ffffff;
+  width: 1.5rem;
+}
+button.checkout {
+  background-color: #f04040;
+  border: none;
+  color: white;
+  padding: 1.5rem 0.8rem;
+  font-weight: bold;
+}
+.cart {
+  min-width: max-content;
+  padding: 0.5rem 1rem;
+  margin-bottom: 2rem;
 }

@@ -68,7 +68,7 @@ h3 {
 }
 
 .product {
-  display: flex;
+  display: block;
   align-items: center;
   flex-wrap: wrap;
   margin: 7rem 5rem ;
