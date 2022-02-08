@@ -1,5 +1,5 @@
 import React from "react";
-
+import scooter from "../images/illustration_3.svg";
 export default function Basket(props) {
   const { cartItems, onAdd, onRemove } = props;
   const itemsPrice = cartItems.reduce((a, c) => a + c.qty * c.price, 0);
@@ -43,7 +43,7 @@ export default function Basket(props) {
               <div className="col mb-4 xs={12} md={12} xl={2}">
                 <img
                   className="small"
-                  src="https://picsum.photos/id/180/2400/1600"
+                  src= {scooter}
                   alt="Delivery Fee"
                 />
               </div>
