@@ -2,7 +2,7 @@ import Header from "../components/NavBarPage";
 import Main from '../components/Main';
 import Basket from '../components/Basket';
 import "../index.css";
-import data from '../data';
+import data from '../components/data';
 import { useState } from 'react';
 
 function Cart() {
