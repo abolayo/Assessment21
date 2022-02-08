@@ -13,9 +13,9 @@ function InputForm() {
                 <Form.Label className='form_label' >Where are you?</Form.Label>
                 <Form.Select aria-label="select" size="lg">
                     <option>Bodija Market</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                    <option value="1">Meran Market</option>
+                    <option value="2">Eleyele</option>
+                    <option value="3">Iwo Road</option>
                 </Form.Select>
                 </Form>
             </div>
